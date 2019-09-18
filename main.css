@@ -1,0 +1,54 @@
+
+
+
+.main-heading{
+    font-weight: 600;
+     font-size:28px; 
+     /* word-spacing:0.18rem; */
+     /* font-family: Helvetica, sans-serif; */
+     font-family: 'Poppins', sans-serif;
+     color:#212121;
+}
+.feature-cards {
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.feature-cards img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.feature-cards p {
+    width: 95%;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.banner-2-logo{
+    width:80px;
+    height:80px;
+    margin-bottom: 10px;
+    /* filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5); */
+    /* fill:white; */
+}
+.savings-card{
+    font-family: 'Poppins', sans-serif;
+    margin-top:20px;
+    padding:20px;
+    background:#f5f5f5;
+    border-radius: 20px;
+     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+}
+.savings-card ul{
+    margin-top: 40px;
+}
+.savings-card span{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size:20px;
+}
