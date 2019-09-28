@@ -8,31 +8,35 @@
     <title>BillTrim</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins:500,600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand mx-auto" href="#"><img style="width:128px;" class="img-fluid"
                 src="./images/billtrim-logo.png" alt="logo" /></a>
-
-
     </nav>
+    <a onclick="topFunction()" id="myBtn" title="Go to top"><img src="./images/up-arrow.svg" width="20"
+            alt="up arrow" /></a>
 
+    <div id="main-text"><span>Who else wants to save upto &nbsp;<span style="background:#52de97; padding:2px 6px; border-radius: 4px; color:whitesmoke;  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        ">$ 1032/year</span>&nbsp; on </span>
+        <span><br>
+            AT&T bills? Here's how...</span></div>
     <div class="container">
-        <p class="text-center mt-5 mb-0 main-heading">
+        <!-- <p class="text-center mt-5 mb-0 main-heading">
             Who else wants to save upto $ 1032/year on
         </p>
         <p class="text-center main-heading">
             AT&T bills? Here's how...
-        </p>
+        </p> -->
 
         <!-- Main cards -->
-        <div class="row mt-5" style="width:70%; margin:auto;">
-            <div class="col-md-4">
-                <div class="feature-cards">
+        <div class="row mt-5 main-card" style="">
+            <div class="col-md-4 box-1">
+                <div class="feature-cards" data-aos="fade-up" data-aos-duration="2000">
                     <img src="./images/bills.svg" alt="bills" />
                     <p>
                         Give us information so we can check your account with AT&T
@@ -40,104 +44,102 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="feature-cards">
+            <div class="col-md-4 box-1">
+                <div class="feature-cards" data-aos="fade-up" data-aos-duration="2000">
                     <img src="./images/coupon.svg" alt="coupon" />
                     <p>
-                        We find insider's coupons, holiday promos & more to save money without worsening features
+                        We find insider's coupons, holiday promos & more to save money
+                        without worsening features
                     </p>
                 </div>
             </div>
 
-
-            <div class="col-md-4">
-                <div class="feature-cards">
+            <div class="col-md-4 box-1">
+                <div class="feature-cards" data-aos="fade-up" data-aos-duration="2000">
                     <img src="./images/risk-free.svg" alt="risk free" />
                     <p>
                         There is no risk because we don't get paid unless you save
                     </p>
                 </div>
             </div>
-
         </div>
-
 
         <!-- Phone number form -->
         <div class="row mt-4">
-              
             <div class="col-12" style="text-align: center; display: inline-block;">
-                    
                 <div class="mt-4">
-                    <span
-                        style="font-size: 13px; font-weight: 600; color:#bdbdbd; font-family: Poppins">Your
-                        AT&T phone number *</span>
-                    <input style="width:250px; margin:0 auto; margin-top: 10px;" type="text" class='form-control form-control-sm' placeholder="Required">
+                    <span style="font-size: 13px; font-weight: 600; color:#bdbdbd; font-family: Poppins">Your AT&T phone
+                        number *</span>
+                    <input style="width:250px; margin:0 auto; margin-top: 10px;" type="text"
+                        class="form-control form-control-sm" placeholder="Required" />
 
-                    <button
-                        style="background:#00c853; width:250px; border-radius: 6px; color:white; font-size:14px; letter-spacing:1.25px; font-weight: bold; padding:10px 20px;"
-                        class="btn btn-success mt-3">FREE ELIGIBILITY CHECK</button>
+                    <button class="btn green-button mt-3">
+                        FREE ELIGIBILITY CHECK
+                    </button>
                 </div>
-
             </div>
-
         </div>
-
-
-
-
-
     </div>
 
     <!-- banner 1 -->
     <div class="mt-5" style="width:100%; padding:60px 40px; background-color:#eceff1">
         <div class="row" style="width:80%; margin:0 auto;">
-            <div class="col-2">
-                <img style="float:right;" class="img-fluid" src="./images/purse.svg" height="48" width="48" alt="purse">
+            <div class="col-md-2 col-sm-12">
+                <img style="float:right;" class="img-fluid" src="./images/purse.svg" height="48" width="48"
+                    alt="purse" />
             </div>
-            <div class="col-10">
+            <div class="col-md-10 col-sm-12">
                 <span style="font-size:18px; font-weight: bold; font-family: Poppins">We charge 25% only after your
-                    savings are secured. 100% money back guarantee</span>
-                <br>
+                    savings are secured. 100% money back
+                    guarantee</span>
+                <br />
                 <span style="font-size:16px; font-family: Poppins">Example: For every $100/year you save, we charge a
-                    1-time fee of $25 to your credit/debit card.</span>
+                    1-time fee of
+                    $25 to your credit/debit card.</span>
             </div>
         </div>
     </div>
 
     <!-- banner 2 with logos -->
-    <div class="mt-0" style="width:100%; padding:60px 40px; background-color:#1a237e; text-align: center;">
-        <div class="row" style="width:80%; margin:0 auto;">
+    <div class="mt-0 banner-logo" style="">
+        <div class="row news" style="width:80%; margin:0 auto;">
             <div class="col">
-                <h4 class="mb-5" style="color:white">See why the news is talking about us</h4>
+                <h4 class="mb-5" style="color:white">
+                    See why the news is talking about us
+                </h4>
                 <span>
-                    <img class="mx-3 banner-2-logo" src="./images/nbc.png" alt="logo">
-                    <img class="mx-3 banner-2-logo" src="./images/abc.png" alt="logo">
-                    <img class="mx-3 banner-2-logo" src="./images/500.png" alt="logo">
-                    <img class="mx-3 banner-2-logo" src="./images/tc.png" alt="logo">
-                    <img class="mx-3 banner-2-logo" src="./images/uh.png" alt="logo">
-                    <img class="mx-3 banner-2-logo" src="./images/founders-choice.png" alt="logo">
-
-
+                    <img data-aos="fade-right" data-aos-duration="3000" class="mx-3 banner-2-logo"
+                        src="./images/nbc.png" alt="logo" />
+                    <img data-aos="fade-right" data-aos-duration="3000" class="mx-3 banner-2-logo"
+                        src="./images/abc.png" alt="logo" />
+                    <img data-aos="fade-right" data-aos-duration="3000" class="mx-3 banner-2-logo"
+                        src="./images/500.png" alt="logo" />
+                    <img data-aos="fade-left" data-aos-duration="3000" class="mx-3 banner-2-logo" src="./images/tc.png"
+                        alt="logo" />
+                    <img data-aos="fade-left" data-aos-duration="3000" class="mx-3 banner-2-logo" src="./images/uh.png"
+                        alt="logo" />
+                    <img data-aos="fade-left" data-aos-duration="3000" class="mx-3 banner-2-logo"
+                        src="./images/founders-choice.png" alt="logo" />
                 </span>
-                <h5 class="" style="color:white; margin-top:80px;"> we've secured savings on over 50,000 bills so far
+                <h5 class="" style="color:white; margin-top:80px;">
+                    we've secured savings on over 50,000 bills so far
                 </h5>
             </div>
-
-
         </div>
     </div>
 
     <!-- banner 3 with cards -->
-    <div class="container">
-        <div class="row" style="width:100%; margin:0 auto; padding-bottom: 20px;">
+    <div class="container" style=" background: linear-gradient(0deg, #c0ffb3 50%, white 50%);">
+        <div class="row" style="width:80%; margin:0 auto; padding-bottom: 20px;">
             <div class="col-12" style="text-align: center;">
                 <h6
                     style="color:#263238; margin-top:60px; margin-bottom:40px; font-family:Poppins; font-size: 20px; font-weight: bold;">
-                    More bills ? Here are the annual savings we've secured for others:</h6>
+                    More bills ? Here are the annual savings we've secured for others:
+                </h6>
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="savings-card">
-                    <span><img src="./images/cable.svg" alt="cable" width="24" height="24">
+                    <span><img src="./images/cable.svg" alt="cable" width="24" height="24" />
                         &nbsp; Cable
                     </span>
 
@@ -149,9 +151,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="savings-card">
-                    <span><img src="./images/cable.svg" alt="cable" width="24" height="24">
+                    <span><img src="./images/cable.svg" alt="cable" width="24" height="24" />
                         &nbsp; Cable
                     </span>
 
@@ -163,9 +165,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="savings-card">
-                    <span><img src="./images/cable.svg" alt="cable" width="24" height="24">
+                    <span><img src="./images/cable.svg" alt="cable" width="24" height="24" />
                         &nbsp; Cable
                     </span>
 
@@ -177,9 +179,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="savings-card">
-                    <span><img src="./images/cable.svg" alt="cable" width="24" height="24">
+                    <span><img src="./images/cable.svg" alt="cable" width="24" height="24" />
                         &nbsp; Cable
                     </span>
 
@@ -195,8 +197,159 @@
     </div>
 
     <!-- new -->
+    <div class="container">
+        <div class="row" style="background: #c0ffb3;">
+            <div class="col-12" style="text-align: center;">
+                <h6
+                    style="color:#263238; margin-top:40px; margin-bottom:30px; font-family:Poppins; font-size: 16px; font-weight: bold;">
+                    We regularly earn rave reviews because we really save money
+                </h6>
+            </div>
+        </div>
+        <div class="row" style=" background: linear-gradient(0deg, white 50%, #c0ffb3 50%);">
+            <div class="col-sm-4 mb-1">
+                <div class="rating-card">
+                    <span>
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                    </span>
+                    <p>
+                        Loved my experience. They were helpful and the process really
+                        worked. I saved a lot money off my bills. Thanks!
+                    </p>
+                    <span class="avatar"><img src="./images/user.png" alt="avatar" />&nbsp; Jack
+                        Stokes</span>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-1">
+                <div class="rating-card">
+                    <span>
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                    </span>
+                    <p>
+                        Loved my experience. They were helpful and the process really
+                        worked. I saved a lot money off my bills. Thanks!
+                    </p>
+                    <span class="avatar"><img src="./images/user.png" alt="avatar" />&nbsp; Heather
+                        Austin</span>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-1">
+                <div class="rating-card">
+                    <span>
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                        <img src="./images/star.svg" alt="rating" width="16" />
+                    </span>
+                    <p>
+                        Loved my experience. They were helpful and the process really
+                        worked. I saved a lot money off my bills. Thanks!
+                    </p>
+                    <span class="avatar"><img src="./images/user.png" alt="avatar" />&nbsp; John Doe</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- FAQ  -->
+    <div class="container faq">
+        <h5>Frequently Asked Questions</h5>
+        <div class="row">
+            <div class="col-12">
+                <h6> <img src="images/question.svg" width="22"> &nbsp;How does BillTrim reduce my bills</h6>
+                <p>
+                    Our team calls and saves you the endless frustration of dealing with
+                    your providers. BillTrim does all the work for you while you live
+                    your life. BillTrim has a team of experts that negotiate on your
+                    behalf. They find promotional rates, customer loyal discounts,
+                    special packages, and additional credits to get you the lowest bill
+                    possible.
+                </p>
+            </div>
+            <div class="col-12">
+                <h6><img src="images/question.svg" width="22"> &nbsp;How much does BillTrim service cost</h6>
+                <p>
+                    We believe in fairness above all. We, the founders,didn't grow up
+                    rich and understand the value of savings. If we reduce your bills by
+                    $400/year, you keep $300 in savings, we keep $100 for our services.
+                    Simple 75% 25% split on savings.
+                </p>
+            </div>
+            <div class="col-12">
+                <h6><img src="images/question.svg" width="22"> &nbsp;Will you change my service</h6>
+                <p>
+                    We look for the best deal in the market, current promotions and do
+                    not change service levels unless it is advantageous to our customer
+                    monetarilt and functionally. We may get you better package for less!
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- guarentee -->
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-4 col-sm-12 d-none d-md-block">
+                <img style="max-width:200px; float:right; margin-right:20px;" class="img-fluid"
+                    src="./images/guarentee.png" alt="guarentee" />
+            </div>
 
+            <div class="col-md-8 col-sm-12">
+                <div class="guarantee">
+                    <h5>Our 4 guarantee to you</h5>
+                    <p>
+                        <img src="./images/checked.svg" width="20" alt="tick" />&nbsp;
+                        Phone plans wont worsen, so you wont lose features when you pay
+                        less.
+                    </p>
+                    <p>
+                        <img src="./images/checked.svg" width="20" alt="tick" />&nbsp; We
+                        keep monitoring your bill 24x7 to continue securing max savings.
+                    </p>
+                    <p>
+                        <img src="./images/checked.svg" width="20" alt="tick" />&nbsp; If
+                        you save nothing, you pay nothing, so there's no risk.
+                    </p>
+                    <p>
+                        <img src="./images/checked.svg" width="20" alt="tick" />&nbsp;
+                        100% money back guarentee because we won't rip you off.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container1" style="background: #2a1a5e; margin: auto; padding:30px 20px; margin-top:100px;">
+        <div class="row footer" style="width:100%;">
+            <div class="col-sm-4 c1">
+                <p>&copy; 2019 BillTrim. All Rights Reserved.</p>
+            </div>
+            <div class="col-sm-4 c1">
+                <h4>Made with <img src="./images/heart.svg" width="24" alt="love"> in California</h4>
+            </div>
+            <div class="col-sm-4 c1" style="text-align: center; margin:auto;">
+                <span >
+                    <a href="">FAQs</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Use</a>
+                </span>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -205,6 +358,36 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        //Get the button:
+        $(document).ready(() => {
+            mybutton.style.display = "none";
+        });
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = () => {
+            scrollFunction();
+        };
+
+        let scrollFunction = () => {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 </body>
 
